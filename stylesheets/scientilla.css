@@ -1,0 +1,314 @@
+body {
+    margin-top: 50px;
+    font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+    overflow-x: hidden;
+}
+
+/* Toolbar */
+.scientilla-nav {
+    border-color: #D4D4D4;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.scientilla-nav .navbar-brand {
+    color: #999999;
+    background-color: #FFFFFF;
+	font-weight: bold;
+}
+
+.scientilla-nav .navbar-nav > li > a {
+    color: #999999;
+    background-color: #FFFFFF;
+}
+
+.scientilla-nav .navbar-nav > li > a:hover,
+.scientilla-nav .navbar-nav > li > a:focus {
+    color: #333333;
+    background-color: #FEFEFE;
+}
+
+.scientilla-nav .navbar-nav > .active > a,
+.scientilla-nav .navbar-nav > .active > a:hover {
+    color: #FFFFFF;
+    background-color: #FEFEFE;
+}
+
+.btn-primary {
+    border-color: #a5423b;
+    color: #ffffff;
+    background-color: #b84d45;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #a5423b;
+    color: #ffffff;
+    background-color: #a5423b;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.download-link, .download-link:hover {
+	font-size: 16px !important;
+    color: #999999 !important;
+	font-weight: bold;
+}
+
+/* Page */
+.page {
+    background-color: #FFFFFF; 
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 1em 0 1em 0;	
+    font-size: 1.2em;
+}
+
+.page p {
+	text-align: justify;
+}
+
+.page img {
+    width: 100%;
+}
+
+.page h1 {
+	color: #666666;
+    font-size: 2em;
+}
+
+.page h2 {
+	color: #666666;
+    font-size: 1.5em;
+	text-decoration: underline;
+}
+
+.page h3 {
+	color: #666666;
+    font-size: 2em;
+	padding: 0px 0px 15px 0px;
+}
+
+.page h4 {
+	color: #666666;
+    font-size: 1.3em;
+	padding: 15px 0px 15px 0px;
+}
+
+.page ul {
+	margin-left: 15px !important;
+}
+
+/* Presentation */
+.presentation {
+    background-color: #FFFFFF;
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 1em 0 1em 0;
+    text-align: center;
+    color: #666666;
+    font-size: 1.2em;
+}
+
+.presentation p {
+	text-align: center;
+}
+
+.presentation img {
+    width: 100%;
+}
+
+.presentation h1 {
+    font-size: 6em;
+}
+
+/* Key Factors */
+.key-factors {
+    background-color: #FEFEFE;    
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 0.5em 0 1em 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.key-factors p {
+	text-align: justify;
+}
+
+.key-factors img {
+    width: 100%;
+}
+
+.key-factor {
+    text-align: center;
+}
+
+.key-factor h4 {
+    color: #999999;
+}
+
+/* What Is Scientilla */
+.what-is-scientilla {
+    background-color: #FFFFFF;    
+    border-color: #D4D4D4;
+    border-width: 1px 0px 0px 0px;
+	border-style: solid;
+    padding: 1.5em 0 0.5em 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.what-is-scientilla p {
+	text-align: justify;
+}
+
+.what-is-scientilla img {
+    width: 100%;
+}
+
+/* Why Scientilla */
+.why-scientilla {
+    background-color: #FEFEFE;    
+    border-color: #D4D4D4;
+    border-width: 0px 0px 0px 0px;
+	border-style: solid;
+    padding: 0.5em 0 0.5em 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.why-scientilla p {
+	text-align: justify;
+}
+
+.why-scientilla img {
+    width: 100%;
+}
+
+/* How Scientilla Works */
+.how-scientilla-works {
+    background-color: #FFFFFF;    
+    border-color: #D4D4D4;
+    border-width: 0px 0px 1px 0px;
+	border-style: solid;
+    padding: 0.5em 0 1.5em 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.how-scientilla-works p {
+	text-align: justify;
+}
+
+.how-scientilla-works img {
+    width: 100%;
+}
+
+/* Download */
+.download {
+    background-color: #FEFEFE;    
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 1em 0 3em 0;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.download p {
+	text-align: justify;
+}
+
+.download img {
+    width: 100%;
+}
+
+.download .files {
+	text-align: left;
+}
+
+/* Who Created Scientilla */
+.who-created-scientilla {
+    background-color: #FFFFFF;    
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 0.5em 0 2.5em 0;
+    text-align: left;
+}
+
+.who-created-scientilla div {
+    text-align: center;
+}
+
+.who-created-scientilla div h4 {
+    text-align: center;
+}
+
+.who-created-scientilla div p.bio {
+    text-align: center;
+}
+
+.who-created-scientilla img {
+    
+}
+
+/* Community Contributors */
+.community-contributors {
+    background-color: #FFFFFF;    
+    border-color: #D4D4D4;
+    border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    padding: 0.5em 0 2.5em 0;
+    text-align: left;
+}
+
+.community-contributors div {
+    text-align: center;
+}
+
+.community-contributors div h4 {
+    text-align: center;
+}
+
+.community-contributors div p.bio {
+    text-align: center;
+}
+
+.community-contributors img {
+    
+}
+
+/* Separators */
+.separator {
+    background-color: transparent;
+    height: 50px;
+}
+
+/* Anchors */
+.anchor { 
+    position: relative; 
+    top: -50px; 
+}
+
+/* Footer */
+.footer {
+    background-color: #FFFFFF;
+    border-color: #D4D4D4;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    padding: 3em 0em 2em 0em;
+    text-align: left;    
+}
