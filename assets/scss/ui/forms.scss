@@ -1,0 +1,64 @@
+label{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+input{
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid $iron;
+    box-shadow: none;
+
+    &[type="checkbox"]{
+        display: none;
+
+        & + label{
+            position: relative;
+            padding-left: 25px;
+
+            &:before{
+                position: absolute;
+                top: 2px;
+                left: 0px;
+                display: block;
+                width: 14px;
+                height: 14px;
+                border-radius: 5px;
+                border: 1px solid $silver-chalice;
+                background: $white;
+                content: '';
+            }
+
+            &:after{
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                display: none;
+                font-family: $font-awesome;
+                font-size: 10px;
+                content: '\f00c';
+            }
+        }
+
+        &:checked{
+            & + label{
+                &:after{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+textarea{
+    min-height: 200px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid $iron;
+    box-shadow: none;
+    resize: none;
+}

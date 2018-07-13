@@ -1,0 +1,73 @@
+.header{
+    display: block;
+    width: 100%;
+    padding: 0px 15px;
+
+    .inner-header{
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    .logo{
+        display: block;
+        width: 176px;
+        height: 50px;
+        margin: 10px 0px;
+        color: transparent;
+        text-indent: -9999px;
+        background: url($images + 'scientilla-logo-white.png') no-repeat;
+        background-size: contain;
+    }
+
+    .main-menu{
+        @include normalize-listing;
+
+        & > li{
+            display: block;
+            float: left;
+        }
+
+        a{
+            position: relative;
+            display: block;
+            padding: 9px 15px;
+            font-size: 14px;
+            color: $white;
+            text-decoration: none;
+
+            &:after{
+                position: absolute;
+                bottom: -10px;
+                left: 15px;
+                display: block;
+                width: calc(100% - 30px);
+                border-bottom: 1px solid $white;
+                content: '';
+                opacity: 0;
+                visibility: hidden;
+                transition: .2s all;
+            }
+        }
+
+        .router-link-active{
+            font-weight: 800;
+
+            &:after{
+                bottom: 0px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .demo-button{
+        margin-left: 10px;
+    }
+
+    &.add-background{
+        background: $deep-cerulean;
+        background: linear-gradient(90deg, $deep-cerulean 0%, $bahama-blue 100%);
+    } 
+}

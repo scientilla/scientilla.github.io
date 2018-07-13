@@ -1,0 +1,13 @@
+.demo-banner{
+    margin-top: 50px;
+    padding: 50px 0px;
+    text-align: center;
+    background: $white;
+    border-top: 1px solid $iron;
+
+    .banner-text{
+        @include intro-text;
+        margin: 0px auto 30px auto;
+        max-width: 600px;
+    }
+}

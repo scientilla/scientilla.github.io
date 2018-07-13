@@ -1,0 +1,24 @@
+.testimonial-carousel{
+    margin-top: 50px;
+
+    .carousel-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .text-container{
+        padding: 50px;
+        color: $mine-shaft;
+        text-align: left;
+    }
+
+    .carousel-description{
+        @include intro-text;
+    }
+
+    .carousel-function{
+        margin-top: 30px;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,56 @@
+.faq-listing{
+    @include normalize-listing;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    & > li{
+        position: relative;
+        padding: 20px 30px;
+        color: $mine-shaft;
+        border: 1px solid $iron;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:after{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: $font-awesome;
+            font-size: 20px;
+            content: '\f107';
+            color: $silver-chalice;
+        }
+
+        & + li{
+            margin-top: 20px;
+        }
+
+        &.is-active{
+            background: $white;
+
+            .question{
+                margin-bottom: 10px;
+            }
+
+            .answer{
+                display: block;
+            }
+
+            &:after{
+                content: '\f057';
+            }
+        }
+    }
+
+    .question{
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .answer{
+        @include default-text;
+        display: none;
+        color: $dusty-gray;
+    }
+}

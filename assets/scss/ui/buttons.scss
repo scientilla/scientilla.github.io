@@ -1,0 +1,24 @@
+.btn{
+    display: inline-block;
+    padding: 13px 25px !important;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid $deep-cerulean;
+    text-decoration: none;
+
+    &.btn-primary{
+        background: $deep-cerulean;
+        color: $white;
+    }
+
+    &.btn-transparent{
+        background: none;
+        border-color: $white;
+        color: $white;
+    }
+
+    &.btn-sm{
+        padding: 8px 15px !important;
+        font-size: 14px;
+    }
+}

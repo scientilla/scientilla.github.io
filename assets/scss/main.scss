@@ -1,0 +1,36 @@
+// Reset & normalize
+@import 'reset';
+@import 'normalize';
+
+// Declare variables & mixins
+@import 'variables';
+@import 'mixins';
+
+
+// Font Awesome
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+$fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss';
+//@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-regular.scss';
+
+// UI
+@import 'ui/general';
+@import 'ui/type';
+@import 'ui/buttons';
+@import 'ui/swiper';
+@import 'ui/faq-listing';
+@import 'ui/page-title';
+@import 'ui/forms';
+
+// Elements
+@import 'elements/header';
+@import 'elements/footer';
+@import 'elements/testimonial-carousel';
+@import 'elements/demo-banner';
+@import 'elements/contact-form';
+
+// Views
+@import 'views/home';
+@import 'views/faq';
+@import 'views/contact';

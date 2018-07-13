@@ -1,0 +1,194 @@
+.homepage{
+    .spotlight{
+        position: relative;
+        display: flex;
+        height: 500px;
+        align-items: flex-end;
+        text-align: center;
+        color: $white;
+        background: $deep-cerulean;
+        background: linear-gradient(90deg, $deep-cerulean 0%, $bahama-blue 100%);
+        overflow: hidden;
+        //
+
+        &:after{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: 2;
+            width: 100%;
+            content: '';
+            height: 1px;
+            box-shadow: 0px 1px 10px lighten($mine-shaft, 5%);
+        }
+
+        .intro-text{
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .screenshot-listing{
+            width: 100%;
+            height: 215px;
+            @include normalize-listing;
+            @include clearfix;
+
+            & > li{
+                position: relative;
+                display: inline-block;
+                margin: 0px 10px;
+                background: url($images + 'browser.svg') no-repeat;
+                background-size: contain;
+                vertical-align: top;
+                box-shadow: 0px 1px 30px darken($regal-blue, 5%);
+
+                .image-container{
+                    padding-bottom: 64.1453%;
+                }
+
+                img{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: block;
+                    width: calc(100% - 5.75%);
+                    margin: 15% 2.87% 0px 2.87%;
+                }
+
+                &:nth-child(1),
+                &:nth-child(3){
+                    width: calc(30% - 5.75%);
+                    margin-top: 50px;
+                }
+
+                &:nth-child(2){
+                    width: calc(35% - 5.75%);
+                }
+            }
+        }
+
+        .github-link-container{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .github-link{
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 100px;
+            text-indent: -9999px;
+            color: transparent;
+
+            &:before{
+                position: absolute;
+                top: 60px;
+                left: 60px;
+                z-index: 4;
+                display: block;
+                font-family: $font-awesome-brands;
+                font-size: 22px;
+                text-indent: 0px;
+                color: $white;
+                content: '\F09B';
+            }
+
+            &:after{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 3;
+                display: block;
+                width: 0px;
+                height: 0px;
+                content: '';
+                border-right: 50px solid $deep-cerulean;
+                border-bottom: 50px solid $deep-cerulean;
+                border-left: 50px solid transparent;
+                border-top: 50px solid transparent;
+            }
+        }
+    }
+
+    .demo-video-container{
+        padding: 75px 0px;
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            align-items: center;
+        }
+
+        .video-outer-container{
+            padding: 0px 0px 0px 50px;
+        }
+
+        .video-container{
+            position: relative;
+            padding-bottom: 56.25%;
+
+            iframe{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .text-container{
+            padding: 0px 50px;
+        }
+    }
+
+    .features-container{
+        padding: 75px 0px;
+        text-align: center;
+        background: $lochmara;
+        color: $white;
+
+        .intro-text{
+            max-width: 600px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        ul,
+        ol{
+            list-style-position: inside;
+        }
+
+        .container{
+            max-width: 800px;
+        }
+    }
+
+    .info-container{
+        padding: 75px 0px;
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            align-items: center;
+        }
+
+        .text-container{
+            padding-right: 50px;
+        }
+    }
+
+    .carousel-container{
+        padding: 75px 0px;
+        background: $orient;
+        color: $white;
+        text-align: center;
+
+        .intro-text{
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
