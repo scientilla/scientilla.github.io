@@ -1,16 +1,22 @@
 .header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
     display: block;
     width: 100%;
     padding: 0px 15px;
 
     .inner-header{
         display: grid;
-        grid-template-columns: 1fr auto auto;
+        grid-template-columns: 1fr auto;
         grid-template-rows: auto;
+        -ms-align-items: center;
         align-items: center;
     }
 
     .logo{
+        @include set-grid(1,1,1,1);
         display: block;
         width: 176px;
         height: 50px;
@@ -22,7 +28,8 @@
     }
 
     .main-menu{
-        @include normalize-listing;
+        @include normalize-listing('true');
+        @include clearfix;
 
         & > li{
             display: block;
@@ -69,5 +76,32 @@
     &.add-background{
         background: $deep-cerulean;
         background: linear-gradient(90deg, $deep-cerulean 0%, $bahama-blue 100%);
-    } 
+    }
+}
+
+@media screen and (max-width: $screen-xs-max) {
+    .header{
+        .main-menu{
+            margin-bottom: 10px;
+
+            & > li{
+                float: none;
+            }
+
+            a{
+                display: inline-block;
+                padding: 10px 0px;
+                vertical-align: top;
+
+                &:after{
+                    display: none;
+                }
+            }
+        }
+
+        .demo-button{
+            margin-left: 0px;
+            margin-bottom: 15px;
+        }
+    }
 }

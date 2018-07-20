@@ -1,16 +1,16 @@
 <template>
   <swiper :options="swiperOption" class="swiper-box">
     <swiper-slide class="swiper-item" v-for="slide in slides">
-        <div class="carousel-item">
-            <div class="text-container">
-                <h3 class="carousel-title">{{ slide.title }}</h3>
-                <div class="carousel-description">{{ slide.description }}</div>
-                <div class="carousel-function">{{ slide.function }}</div>
-            </div>
-            <div class="image-container" :style="slide.imageStyle">
-                <img :src="slide.imageUrl" alt="">
-            </div>
+      <div class="carousel-item">
+        <div class="image-container" :style="slide.imageStyle">
+          <img :src="slide.imageUrl" alt="">
         </div>
+        <div class="text-container">
+          <h3 class="carousel-title">{{ slide.title }}</h3>
+          <div class="carousel-description">{{ slide.description }}</div>
+          <div class="carousel-function">{{ slide.function }}</div>
+        </div>
+      </div>
     </swiper-slide>
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
@@ -25,13 +25,9 @@
           slidesPerView: 1,
           spaceBetween: 30,
           mousewheel: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          autoplay: {
-            delay: 5000,
-          }
+          pagination: '.swiper-pagination',
+          paginationClickable: true,
+          autoplay: 5000
         },
         slides: [
           {

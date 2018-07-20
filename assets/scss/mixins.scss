@@ -22,3 +22,26 @@
         clear: both;
     }
 }
+
+@mixin set-grid($row: 1, $column: 1, $rowSpan: 1, $colSpan: 1) {
+    /* autoprefixer: off */
+    @if $colSpan > 1 {
+        -ms-grid-column-span: $colSpan;
+    }
+    @else {
+        grid-column: $column;
+    }
+
+    grid-column-start: $column;
+    grid-column-end: $column + $colSpan;
+
+    @if $rowSpan > 1 {
+        -ms-grid-row-span: $rowSpan;
+    }
+
+    grid-row-start: $row;
+    grid-row-end: $row + $rowSpan;
+
+    -ms-grid-row: $row;
+    -ms-grid-column: $column;
+}

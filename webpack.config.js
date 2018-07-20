@@ -1,16 +1,21 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 const config = {
   entry: ['./assets/scss/main.scss', './assets/js/main.js'],
   module: {
     rules: [
       {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
-        loader: 'file-loader',
-        options: {
-          outputPath: 'assets'
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },  {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
         }
       }, {
         test: /\.scss$/,
@@ -20,15 +25,21 @@ const config = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [require('autoprefixer')]
+              plugins: () => [autoprefixer({
+                grid: true,
+                browsers: ['last 2 version', 'IE 10', 'IE 11']
+              })]
             }
           }
           ,
           'sass-loader',
         ],
       }, {
-        test: /\.vue$/,
-        loader: 'vue-loader'
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+        }
       }
     ]
   },
@@ -36,7 +47,13 @@ const config = {
     new MiniCssExtractPlugin({
       filename: 'main.css',
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CopyWebpackPlugin([
+      {
+        from: 'assets/img',
+        to: 'assets/img'
+      }
+    ])
   ],
   resolve: {
     alias: {
@@ -44,7 +61,12 @@ const config = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
-  watch: true
+  watch: true,
+  output: {
+    publicPath: '/dist/',
+    devtoolLineToLine: true,
+    pathinfo: true
+  },
 };
 
 module.exports = config;

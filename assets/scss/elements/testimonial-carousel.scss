@@ -2,13 +2,11 @@
     margin-top: 50px;
 
     .carousel-item{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        display: block;
     }
 
     .text-container{
-        padding: 50px;
+        padding: 20px;
         color: $mine-shaft;
         text-align: left;
     }
@@ -20,5 +18,24 @@
     .carousel-function{
         margin-top: 30px;
         font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+    .testimonial-carousel{
+        .carousel-item{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        .text-container{
+            @include set-grid(1,1,1,1);
+            padding: 50px;
+        }
+
+        .image-container{
+            @include set-grid(1,2,1,1);
+        }
     }
 }

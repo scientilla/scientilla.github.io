@@ -5,13 +5,14 @@
 // Declare variables & mixins
 @import 'variables';
 @import 'mixins';
+@import 'utility';
 
 
 // Font Awesome
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-brands.scss';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 //@import '../../node_modules/@fortawesome/fontawesome-free/scss/fa-regular.scss';
 
 // UI
@@ -22,6 +23,8 @@ $fa-font-path: '../../node_modules/@fortawesome/fontawesome-free/webfonts';
 @import 'ui/faq-listing';
 @import 'ui/page-title';
 @import 'ui/forms';
+@import 'ui/image-dialog';
+@import 'ui/mobile-menu';
 
 // Elements
 @import 'elements/header';

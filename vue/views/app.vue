@@ -4,12 +4,17 @@
             <header class="header js-header add-background">
                 <div class="inner-header">
                     <router-link to="/" class="logo">Scientilla</router-link>
-                    <ul class="main-menu">
-                        <li><router-link to="/about">About</router-link></li>
-                        <li><router-link to="/faq">FAQ</router-link></li>
-                        <li><router-link to="/contact">Contact us</router-link></li>
-                    </ul>
-                    <a href="#" class="btn btn-transparent btn-sm demo-button">Demo</a>
+                    <a href="#" class="mobile-menu-button" @click="toggleMobileMenu">
+                        <span></span>
+                    </a>
+                    <div class="mobile-menu-container js-mobile-menu-container">
+                        <ul class="main-menu">
+                            <li><router-link to="/about">About</router-link></li>
+                            <li><router-link to="/faq">FAQ</router-link></li>
+                            <li><router-link to="/contact">Contact us</router-link></li>
+                        </ul>
+                        <a href="#" class="btn btn-transparent btn-sm demo-button">Demo</a>
+                    </div>
                 </div>
             </header>
 
@@ -37,7 +42,6 @@
 
 <script>
     import DemoBanner from '../../vue/components/demo-banner.vue';
-    import WebFont from 'webfontloader';
 
     export default{
         data() {
@@ -49,11 +53,17 @@
             DemoBanner
         },
         methods: {
-            updateDemoBannerState: function(state) {
+            updateDemoBannerState(state) {
                 this.showDemoBanner = state;
                 this.$nextTick(() => {
                     stickyFooter();
                 });
+            },
+
+            toggleMobileMenu(evt) {
+                eventBus.$emit('changeMobileMenu');
+
+                evt.preventDefault();
             }
         },
         watch:{
@@ -61,43 +71,9 @@
                 this.showDemoBanner = false;
                 this.$nextTick(() => {
                     stickyFooter();
+                    eventBus.$emit('changeMobileMenu', false);
                 });
             }
         }
-    }
-
-    let loadGoogleWebFonts = function() {
-        WebFont.load({
-            google: {
-                families: ['Open Sans: 400, 700, 800', 'Roboto Slab']
-            }
-        });
-    }
-
-    let stickyFooter = function() {
-        let wrapperElements = document.getElementsByClassName('js-wrapper'),
-            footerElements  = document.getElementsByClassName('js-footer'),
-            wrapper         = wrapperElements[0],
-            footer          = footerElements[0],
-            height          = 0;
-
-        if (wrapper && footer) {
-            height = footer.clientHeight;
-            wrapper.style.paddingBottom = height + 'px';
-        }
-    }
-
-    global.stickyFooter = stickyFooter;
-
-    // Directly load these scripts
-    loadGoogleWebFonts();
-
-    // Load after window is loaded
-    window.onload = function() {
-        stickyFooter();
-    }
-
-    window.onresize = function() {
-        stickyFooter();
     }
 </script>

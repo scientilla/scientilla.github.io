@@ -1,4 +1,4 @@
-$images:                   '../img/';
+$images:                   '../../assets/img/';
 
 // Fonts
 $open-sans:                'Open Sans', sans-serif;
@@ -20,3 +20,19 @@ $dusty-gray:               rgb(153,153,153);   // #999999
 $silver-chalice:           rgb(169, 169, 169); // #a9a9a9
 $geyser:                   rgb(222,226,230);   // #dee2e6
 $white:                    rgb(255,255,255);   // #ffffff
+
+$screen-xl: 1400px;
+$screen-xl-min: $screen-xl;
+$screen-lg-max: $screen-xl - 1px;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
+$screen-md-max: $screen-lg - 1px;
+$screen-md: 992px;
+$screen-md-min: $screen-md;
+$screen-sm-max: $screen-md - 1px;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+$screen-xs-max: $screen-sm - 1px;
+$screen-xs: 500px;
+$screen-xs-min: $screen-xs;
+$screen-xxs-max: $screen-xs - 1px;

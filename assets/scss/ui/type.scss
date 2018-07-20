@@ -55,6 +55,8 @@ h6{
 }
 
 @mixin default-text() {
+    margin-bottom: 3rem;
+
     &,
     p,
     ol,
@@ -67,10 +69,30 @@ h6{
     ol,
     ul{
         margin-bottom: 3rem;
+
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    ol,
+    ul{
+        padding-left: 20px;
+
+         & > li{
+            margin-bottom: 10px;
+        }
+    }
+
+    a{
+        color: $mine-shaft;
+        text-decoration: underline;
     }
 }
 
 @mixin intro-text() {
+    margin-bottom: 3rem;
+
     &,
     p,
     ol,
@@ -83,6 +105,29 @@ h6{
     ol,
     ul{
         margin-bottom: 3rem;
+
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    ol,
+    ul{
+        padding-left: 20px;
+
+        & > li{
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        &,
+        p,
+        ol,
+        ul{
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+        }
     }
 }
 
@@ -125,4 +170,14 @@ h5,
 h6,
 .h6{
     @include h6;
+}
+
+::selection{
+    background: $mine-shaft;
+    color: $white;
+}
+
+::-moz-selection {
+    background: $mine-shaft;
+    color: $white;
 }

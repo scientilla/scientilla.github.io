@@ -14,13 +14,6 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        .container{
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            grid-template-rows: auto;
-            align-items: center;
-        }
-
         .logo{
             display: block;
             width: 100px;
@@ -37,6 +30,36 @@
 
             a{
                 font-size: 18px;
+            }
+        }
+    }
+
+    .footer-text{
+        margin: 1rem 0px;
+    }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+    .footer{
+        .footer-bottom{
+            .container{
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: auto;
+                align-items: center;
+            }
+
+            .logo{
+                @include set-grid(1,1,1,1);
+            }
+
+            .footer-text{
+                @include set-grid(1,2,1,1);
+                margin: 1rem 0px;
+            }
+
+            .socials{
+                @include set-grid(1,3,1,1);
             }
         }
     }

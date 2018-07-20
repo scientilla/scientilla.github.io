@@ -1,0 +1,16 @@
+.table-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+
+    .table-cell-container {
+        text-align: left;
+        display: table-cell;
+        vertical-align: middle;
+
+        &.center{
+            text-align: center;
+        }
+    }
+}
