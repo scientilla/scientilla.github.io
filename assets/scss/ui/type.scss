@@ -142,6 +142,13 @@ h6{
     @include intro-text;
 }
 
+.tagline{
+    @include clearfix;
+    @include intro-text;
+    display: block;
+    font-style: italic;
+}
+
 h1,
 .h1{
     @include h1;

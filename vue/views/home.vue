@@ -3,7 +3,7 @@
         <div class="spotlight">
             <div class="container">
                 <h1 class="spotlight-title">{{ spotlight.title }}</h1>
-                <div class="intro-text" v-html="spotlight.introText"></div>
+                <span class="tagline" v-html="spotlight.introText"></span>
                 <ul class="screenshot-listing">
                     <li>
                         <div class="image-container">
@@ -61,7 +61,7 @@
             <div class="container">
                 <h2 class="section-title">{{ personalGroupSection.title }}</h2>
 
-                <div class="intro-text" v-html="personalGroupSection.introText"></div>
+                <span class="tagline" v-html="personalGroupSection.introText"></span>
 
                 <div class="image-text-container">
                     <div class="text" v-html="personalGroupSection.text"></div>
@@ -77,7 +77,7 @@
             <div class="container">
                 <h2 class="section-title">{{ collaborativeEnvironment.title }}</h2>
 
-                <div class="intro-text" v-html="collaborativeEnvironment.introText"></div>
+               <span class="tagline" v-html="collaborativeEnvironment.introText"></span>
 
                 <div class="text" v-html="collaborativeEnvironment.text"></div>
             </div>
@@ -86,7 +86,7 @@
         <section class="metrics-and-charts">
             <div class="container">
                 <h2 class="section-title">{{ metricsAndCharts.title }}</h2>
-                <div class="intro-text" v-html="metricsAndCharts.introText"></div>
+                <span class="tagline" v-html="metricsAndCharts.introText"></span>
                 <div class="text" v-html="metricsAndCharts.text"></div>
 
                 <div class="images">
@@ -105,7 +105,7 @@
                     <div class="table-container">
                         <div class="table-cell-container">
                             <h2 class="section-title">{{ externalAccess.title }}</h2>
-                            <div class="intro-text" v-html="externalAccess.introText"></div>
+                            <span class="tagline" v-html="externalAccess.introText"></span>
                             <div class="text" v-html="externalAccess.text"></div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                 },
                 video: {
                     id: '',
-                    text: '<p><strong>SCIENTILLA</strong> is the new <strong>open-source</strong> platform to store, manage and access scientific research output, developed at the Italian Institute of Technology.</p><p>Institutions, research groups and researchers can certify and keep track of their <strong>own scientific results</strong>, such as publications, books, talks, ...</p><p>Group leaders will find the output of  their team <strong>easily accessible</strong> and they  can better design a strategy to reach  their goals.</p><p><strong>Charts</strong> and <strong>metrics</strong> related to research results are readily accessible at personal, group and institutional level.</p><p>SCIENTILLA data are made available to external services through <strong>APIs</strong>.</p>',
+                    text: '<p><strong>SCIENTILLA</strong> is the new <strong>open-source</strong> platform to store, manage and access scientific research output, developed at the Italian Institute of Technology.</p><p>Institutions, research groups and researchers can <strong>certify</strong> and <strong>keep track</strong> of their scientific results, such as publications, books, talks, ...</p><p>Group <strong>leaders</strong> will find the output of  their team <strong>easily accessible</strong> and they  can better design a strategy to reach  their goals.</p><p><strong>Charts</strong> and <strong>metrics</strong> related to research results are readily accessible at personal, group and institutional level.</p><p>SCIENTILLA data are made available to external services through <strong>APIs</strong>.</p>',
                     button: {
                         text: 'Try our demo?',
                         url: '#'
@@ -162,7 +162,7 @@
                 personalGroupSection: {
                     title: 'Personal, group and institutional profiles',
                     introText: '<p>keep up-to-date research output at several levels</p>',
-                    text: '<ul><li>Institutional installation.</li><li>Hierarchy of profiles: personal, group and institutional profiles.</li><li>Researchers and group leaders choose what to showcase about their activity and the activity of the research group.</li></ul>',
+                    text: '<ul><li>Institutional <strong>installation</strong>.</li><li><strong>Hierarchy</strong> of profiles: personal, group and institutional profiles.</li><li>Researchers and group leaders choose what to <strong>showcase</strong> about <strong>their</strong> activity and the activity of the <strong>research</strong> group.</li></ul>',
                     image: {
                         url: '/dist/assets/img/personal-group.png',
                         alt: 'Personal, group and institutional profiles'
@@ -171,12 +171,12 @@
                 collaborativeEnvironment: {
                     title: 'Collaborative environment',
                     introText: '<p>Limit the burden of filling-in your document infos</p>',
-                    text: '<ul><li>Newly added documents are suggested to the users who are likely to be co-authors reducing the amount of typing.</li><li>Keeping up-to-date the output of a whole research group is a quick operation: SCIENTILLA automatically suggests to group leaders the publications authored by their staff.</li><li>In institutes provided with a paid access to Elsevier Scopus APIs, researchers can import automatically documents augmented with bibliometric information from the Scopus database.</li></ul>'
+                    text: '<ul><li>Newly added documents are <strong>suggested</strong> to the users who are likely to be co-authors reducing the amount of <strong>typing</strong>.</li><li>Keeping <strong>up-to-date</strong> the output of a whole research group is a <strong>quick</strong> operation: SCIENTILLA <strong>automatically suggests</strong> to group leaders the publications authored by their staff.</li><li>In institutes provided with a paid access to <strong>Elsevier Scopus</strong> APIs, researchers can import automatically documents augmented with <strong>bibliometric information</strong> from the Scopus database.</li></ul>'
                 },
                 metricsAndCharts: {
                     title: 'Metrics and charts',
-                    introText: '<p>graphical overview of your performance</p>',
-                    text: '<ul><li>Graphics information about documents (by type, by year, by institution, ...)</li><li>In institutions provided with a paid access to Elsevier Scopus APIs, bibliometric indexes and citational data are monitored through a dashboard.</li></ul>',
+                    introText: '<p>a graphical overview of your performance</p>',
+                    text: '<ul><li><strong>Graphics</strong> information about your scientific output (by type, by year, by institution, ...)</li><li>In institutions provided with a paid access to Elsevier Scopus APIs, bibliometric indexes and citational data are <strong>monitored</strong> through a <strong>dashboard</strong>.</li></ul>',
                     images: [
                         {
                             url: '/dist/assets/img/documents-by-type-bar-chart.png',
@@ -191,7 +191,7 @@
                 externalAccess: {
                     title: 'External access',
                     introText: '<p>re-use your data outside SCIENTILLA</p>',
-                    text: '<ul><li>REST JSON APIs allow institutional websites, analysis tools or services for accessing research results and bibliometric data from SCIENTILLA.</li><li>1-click export of all publications in a SCIENTILLA profile into csv or bibtex files to reuse your bibliography externally.</li></ul>',
+                    text: '<ul><li><strong>REST JSON APIs</strong> allow institutional websites, analysis tools or services for <strong>accessing</strong> research results and bibliometric data from SCIENTILLA.</li><li>1-click <strong>export</strong> of all publications in a SCIENTILLA profile into csv or bibtex files to <strong>reuse</strong> your <strong>bibliography</strong> externally.</li></ul>',
                     image: {
                         url: '/dist/assets/img/external-access.png',
                         alt: 'External access'
