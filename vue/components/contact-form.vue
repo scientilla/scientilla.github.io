@@ -2,7 +2,10 @@
     <div class="contact-form-container">
         <form action="" class="contact-form">
             <ul class="field-listing">
-                <li v-for="field in fields" class="field-row">
+                <li
+                    v-for="(field, index) in fields"
+                    :key="index"
+                    class="field-row">
                     <label :for="field.name">{{ field.label }}:</label>
                     <input
                         :type="field.type"

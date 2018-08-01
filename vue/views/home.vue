@@ -93,8 +93,9 @@
                     <image-dialog
                     :src="image.url"
                     :alt="image.alt"
-                    v-for="image in metricsAndCharts.images"
-                    v-if="image.url"></image-dialog>
+                    v-for="(image, index) in metricsAndCharts.images"
+                    v-if="image.url"
+                    :key="index"></image-dialog>
                 </div>
             </div>
         </section>

@@ -1,6 +1,9 @@
 <template>
   <swiper :options="swiperOption" class="swiper-box">
-    <swiper-slide class="swiper-item" v-for="slide in slides">
+    <swiper-slide
+      class="swiper-item"
+      v-for="(slide, index) in slides"
+      :key="index">
       <div class="carousel-item">
         <div class="image-container" :style="slide.imageStyle">
           <img :src="slide.imageUrl" alt="">

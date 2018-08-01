@@ -2,7 +2,8 @@
     <div>
         <ul class="faq-listing">
             <li
-                v-for="item in items"
+                v-for="(item, index) in items"
+                :key="index"
                 @click="toggleActive(item)"
                 :class="{ 'is-active': activeItems.indexOf(item) >= 0 }">
                 <h2 class="question">{{ item.question }}</h2>
