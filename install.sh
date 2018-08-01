@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-docker build -t "promotion_website:latest" .
+docker build -t "scientilla-promotion:latest" .
 
-docker run --rm -p 8080:8080 --name promotion_website promotion_website
+docker run --rm -p 8090:8090 --name scientilla-promotion scientilla-promotion
