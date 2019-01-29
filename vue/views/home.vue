@@ -7,17 +7,26 @@
                 <ul class="screenshot-listing">
                     <li>
                         <div class="image-container">
-                            <img src="https://place-hold.it/800x450" alt="">
+                            <image-dialog
+                                :src="spotlight.imageLeft.url"
+                                :alt="spotlight.imageLeft.alt"
+                                v-if="spotlight.imageLeft.url"></image-dialog>
                         </div>
                     </li>
                    <li>
                         <div class="image-container">
-                            <img src="https://place-hold.it/800x450" alt="">
+                            <image-dialog
+                                :src="spotlight.imageMiddle.url"
+                                :alt="spotlight.imageMiddle.alt"
+                                v-if="spotlight.imageMiddle.url"></image-dialog>
                         </div>
                     </li>
                     <li>
                         <div class="image-container">
-                            <img src="https://place-hold.it/800x450" alt="">
+                            <image-dialog
+                                :src="spotlight.imageRight.url"
+                                :alt="spotlight.imageRight.alt"
+                                v-if="spotlight.imageRight.url"></image-dialog>
                         </div>
                     </li>
                 </ul>
@@ -37,7 +46,10 @@
                     <div class="table-container">
                         <div class="table-cell-container">
                             <div class="video-container">
-                                <div id="youtube-video" :data-id="video.id"></div>
+                                <image-dialog
+                                    :src="video.image.url"
+                                    :alt="video.image.alt"
+                                    v-if="video.image.url"></image-dialog>
                             </div>
                         </div>
                     </div>
@@ -126,15 +138,31 @@
             return {
                 spotlight: {
                     title: 'SCIENTILLA',
-                    introText: '<p>Spark your research!</p>'
+                    introText: '<p>Spark your research!</p>',
+                    imageLeft: {
+                        url: '/dist/assets/img/documents-verfied.png',
+                        alt: 'Documents verified'
+                    },
+                    imageMiddle: {
+                        url: '/dist/assets/img/dashboard-metrics.png',
+                        alt: 'Dashboard metrics'
+                    },
+                    imageRight: {
+                        url: '/dist/assets/img/dashboard-overview.png',
+                        alt: 'Dashboard overview'
+                    }
                 },
                 github: {
                     button: {
-                        url: '#',
+                        url: 'https://github.com/scientilla/scientilla',
                         text: 'Visit our Github page!'
                     }
                 },
                 video: {
+                    image: {
+                        url: '/dist/assets/img/documents-verfied.png',
+                        alt: 'Documents verified'
+                    },
                     id: '',
                     text: '<p><strong>SCIENTILLA</strong> is the new <strong>open-source</strong> platform to store, manage and access scientific research output, developed at the Italian Institute of Technology.</p><p>Institutions, research groups and researchers can <strong>certify</strong> and <strong>keep track</strong> of their scientific results, such as publications, books, talks, ...</p><p>Group <strong>leaders</strong> will find the output of  their team <strong>easily accessible</strong> and they  can better design a strategy to reach  their goals.</p><p><strong>Charts</strong> and <strong>metrics</strong> related to research results are readily accessible at personal, group and institutional level.</p><p>SCIENTILLA data are made available to external services through <strong>APIs</strong>.</p>',
                     button: {
@@ -187,7 +215,7 @@
             ImageDialog
         },
         mounted() {
-            addYouTube();
+           //addYouTube();
         }
     }
 

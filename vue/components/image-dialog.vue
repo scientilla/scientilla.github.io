@@ -1,5 +1,8 @@
 <template>
-    <div class="image-dialog" @keydown.esc="hideDialog">
+    <div
+        class="image-dialog"
+        v-bind:class="{'show': appearedDialog}"
+        @keydown.esc="hideDialog">
         <button class="trigger" @click="showDialog">
             <img :src="src" :alt="alt">
         </button>

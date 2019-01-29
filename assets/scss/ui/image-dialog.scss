@@ -1,9 +1,11 @@
 .image-dialog{
+    position: relative;
     display: block;
 
     button{
         display: block;
         max-width: 100%;
+        margin: auto;
         padding: 0px;
         border: 0px;
         background: none;
@@ -20,15 +22,16 @@
         z-index: 1000;
         width: 100%;
         height: 100%;
+        padding: 0px 5rem;
+        overflow: auto;
     }
 
     .image-dialog-inner-container{
         position: relative;
-        display: -ms-flexbox;
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding: 5rem;
+        //display: -ms-flexbox;
+        //display: flex;
+        //align-items: center;
+        //height: 100%;
         text-align: center;
 
         img{
@@ -45,7 +48,7 @@
     }
 
     .image-dialog-background{
-        position: absolute;
+        position: fixed;
         top: 0px;
         left: 0px;
         z-index: 1;
@@ -57,26 +60,42 @@
 
     .close-dialog{
         position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+        top: -3rem;
+        right: -3rem;
         z-index: 3;
-        width: 21px;
+        width: 14px;
         color: $white;
         cursor: pointer;
         overflow: hidden;
 
          &:before{
             font-family: $font-awesome;
-            font-size: 3rem;
+            font-size: 2rem;
             content: '\f00d';
          }
+    }
+
+    &.show{
+        .image-dialog-inner-container{
+            img{
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                max-height: none !important;
+                margin: 5rem auto !important;
+            }
+        }
     }
 }
 
 @media screen and (max-width: $screen-xs-max) {
     .image-dialog{
-        .image-dialog-inner-container{
-            padding: 5rem 1.5rem;
+        .image-dialog-container{
+            padding: 5rem 2rem;
+        }
+
+        .close-dialog{
+            display: none;
         }
     }
 }

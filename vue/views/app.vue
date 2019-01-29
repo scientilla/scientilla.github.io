@@ -28,10 +28,10 @@
                 <div class="container">
                     <a href="#" class="logo">Scientilla</a>
                     <div class="footer-text">
-                        Lorem ipsum - 2018
+                        Istituto Italiano di Tecnologia - 2019
                     </div>
                     <ul class="socials">
-                        <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://github.com/scientilla/scientilla" target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>

@@ -43,3 +43,11 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: $screen-xs-max) {
+    body{
+        &.hide-overflow{
+            overflow: auto !important;
+        }
+    }
+}
