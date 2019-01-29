@@ -13,7 +13,6 @@
                             <li><router-link to="/faq">FAQ</router-link></li>
                             <li><router-link to="/contact">Contact us</router-link></li>
                         </ul>
-                        <a href="#" class="btn btn-transparent btn-sm demo-button">Demo</a>
                     </div>
                 </div>
             </header>

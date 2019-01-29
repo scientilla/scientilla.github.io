@@ -46,11 +46,6 @@
                     <div class="table-container">
                         <div class="table-cell-container">
                             <div class="text" v-html="video.text"></div>
-
-                            <a
-                                :href="video.button.url"
-                                v-if="video.button.url"
-                                class="btn btn-primary">{{ video.button.text }}</a>
                         </div>
                     </div>
                 </div>
