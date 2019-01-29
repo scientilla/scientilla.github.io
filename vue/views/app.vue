@@ -9,7 +9,7 @@
                     </a>
                     <div class="mobile-menu-container js-mobile-menu-container">
                         <ul class="main-menu">
-                            <li><router-link to="/about">About</router-link></li>
+                            <li><router-link to="/">Home</router-link></li>
                             <li><router-link to="/faq">FAQ</router-link></li>
                             <li><router-link to="/contact">Contact us</router-link></li>
                         </ul>

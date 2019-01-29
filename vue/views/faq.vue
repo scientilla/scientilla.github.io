@@ -22,7 +22,7 @@
             Faq
         },
         mounted() {
-            this.$emit('show-demo-banner', true);
+            this.$emit('show-demo-banner', false);
         }
     }
 </script>
