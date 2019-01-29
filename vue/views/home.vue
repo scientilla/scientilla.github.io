@@ -118,19 +118,6 @@
                     v-if="externalAccess.image.url"></image-dialog>
             </div>
         </section>
-
-        <div class="carousel-container">
-            <div class="container">
-                <h2 class="section-title">Heading level 2</h2>
-                <div class="intro-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <div class="testimonial-carousel">
-                    <testimonials></testimonials>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
