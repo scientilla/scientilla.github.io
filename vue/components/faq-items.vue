@@ -37,7 +37,7 @@
                         answer: '<p>SCIENTILLA does work also without an institutional paid access to Elsevier Scopus APIs. Of course, the quick import of documents from Scopus given a researcher Scopus Id and all the features related to bibliometric data would be missing. At the moment, the Scopus database is the source of information for citational data. Although an access to Scopus APIs is not required, many features in SCIENTILLA would greatly benefit from it and it is recommended. Check <a href="https://dev.elsevier.com/sc_apis.html">here</a> for more information on the Elsevier Scopus APIs.</p>' 
                     }, {
                         question: 'Is SCIENTILLA open source?',
-                        answer: '<p>Yes, you can find the SCIENTILLA code at the following URL on GitHub: <url>.</p>' 
+                        answer: '<p>Yes, you can find the SCIENTILLA code on GitHub at the following <a href="https://github.com/scientilla/scientilla"  target="_blank">URL</a>.</p>' 
                     }, {
                         question: 'Does SCIENTILLA have an API?',
                         answer: '<p>Yes, SCIENTILLA has a Json REST API. All information, metadata and metrics about your documents are potentially accessible by external services of your institution.</p>' 
@@ -45,7 +45,7 @@
                         question: 'Can users export the information in their profiles?',
                         answer: '<p>Yes, the list of full references of the documents in your profile is available for download, both in .csv (comma-separates values) and .bib (BibTeX) format.</p>' 
                     }, {
-                        question: 'How can I contact the SCIENTILLA team?',
+                        question: 'Can I contact the SCIENTILLA team?',
                         answer: '<p>Feel free to contact us for any question, feedback or if you would like to explore the possibility of installing SCIENTILLA in your institute/university. We will be very happy to reply and get in touch with you! Our contacts at <URL_of_contacts_page>.</p>' 
                     }
                 ]

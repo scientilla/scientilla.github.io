@@ -140,16 +140,16 @@
                     title: 'SCIENTILLA',
                     introText: '<p>Spark your research!</p>',
                     imageLeft: {
-                        url: '/dist/assets/img/documents-verfied.png',
-                        alt: 'Documents verified'
+                        url: '/dist/assets/img/dashboard-overview.png',
+                        alt: 'Dashboard overview'
                     },
                     imageMiddle: {
                         url: '/dist/assets/img/dashboard-metrics.png',
                         alt: 'Dashboard metrics'
                     },
                     imageRight: {
-                        url: '/dist/assets/img/dashboard-overview.png',
-                        alt: 'Dashboard overview'
+                        url: '/dist/assets/img/document-info.png',
+                        alt: 'Document overview'
                     }
                 },
                 github: {
@@ -187,7 +187,7 @@
                 metricsAndCharts: {
                     title: 'Metrics and charts',
                     introText: '<p>a graphical overview of your performance</p>',
-                    text: '<ul><li><strong>Graphics</strong> information about your scientific output (by type, by year, by institution, ...)</li><li>In institutions provided with a paid access to Elsevier Scopus APIs, bibliometric indexes and citational data are <strong>monitored</strong> through a <strong>dashboard</strong>.</li></ul>',
+                    text: '<ul><li><strong>Graphics</strong> information about your scientific output (by type, by year, by institution, ...)</li><li>In institutions provided with a paid access to Elsevier Scopus APIs, bibliometric indexes and citational data are <strong>monitored</strong> through a <strong>dashboard</strong>. Institutes with a Clarivate account can also retrieve impact factors.</li></ul>',
                     images: [
                         {
                             url: '/dist/assets/img/documents-by-type-bar-chart.png',
