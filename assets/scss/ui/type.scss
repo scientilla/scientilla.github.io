@@ -57,6 +57,15 @@ h6{
 @mixin default-text() {
     margin-bottom: 3rem;
 
+    a{
+        &,
+        &:hover,
+        &:focus,
+        &:active:focus{
+            color: $deep-cerulean;
+        }
+    }
+
     &,
     p,
     ol,
@@ -92,6 +101,15 @@ h6{
 
 @mixin intro-text() {
     margin-bottom: 3rem;
+
+    a{
+        &,
+        &:hover,
+        &:focus,
+        &:active:focus{
+            color: $deep-cerulean;
+        }
+    }
 
     &,
     p,
