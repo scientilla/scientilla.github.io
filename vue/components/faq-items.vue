@@ -46,7 +46,7 @@
                         answer: '<p>Yes, the list of full references of the documents in your profile is available for download, both in .csv (comma-separates values) and .bib (BibTeX) format.</p>' 
                     }, {
                         question: 'Can I contact the SCIENTILLA team?',
-                        answer: '<p>Feel free to contact us for any question, feedback or if you would like to explore the possibility of installing SCIENTILLA in your institute/university. We will be very happy to reply and get in touch with you! Our contacts at <URL_of_contacts_page>.</p>' 
+                        answer: '<p>Feel free to contact us for any question, feedback or if you would like to explore the possibility of installing SCIENTILLA in your institute/university. We will be very happy to reply and get in touch with you! You can visit our contact page <a href="/contact">here</a>.</p>'
                     }
                 ]
             }

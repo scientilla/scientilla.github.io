@@ -191,11 +191,11 @@
                     images: [
                         {
                             url: '/dist/assets/img/documents-by-type-bar-chart.png',
-                            alt: 'Bar chart'
+                            alt: 'Documents by source type'
                         },
                         {
-                            url: '/dist/assets/img/documents-by-type-pie-chart.png',
-                            alt: 'Pie chart'
+                            url: '/dist/assets/img/journal-metrics-by-year.png',
+                            alt: 'Journal metrics by year'
                         }
                     ]
                 },

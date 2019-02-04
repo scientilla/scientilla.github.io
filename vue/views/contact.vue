@@ -16,7 +16,7 @@
             return {
                 page: {
                     title: 'Contact',
-                    introText: '<p>The Data Analysis Office at the Istituto Italiano di Tecnologia is happy to provide you with' +
+                    introText: '<p>The Data Analysis Office at the Istituto Italiano di Tecnologia is happy to provide you with ' +
                         'more information and answer any questions you may have regarding <strong>SCIENTILLA</strong>. Just drop us a line at ' +
                         '<a href="mailto:data.analysis@iit.it">data.analysis@iit.it</a></p>'
                 }
