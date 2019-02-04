@@ -15,7 +15,7 @@ const config = {
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015']
+          presets: ['@babel/preset-env']
         }
       }, {
         test: /\.scss$/,
