@@ -36,22 +36,14 @@ const config = {
           'sass-loader',
         ],
       }, {
-            test: /\.(png|jpg|jpeg|gif|svg)(\?.*$|$)/,
-            exclude: [/fonts/],
-            loader: 'file-loader',
-            options: {
-                name: '[name].[ext]',
-                outputPath: '/img/'
-            }
-        }, {
-            test: /\.(woff|woff2|ttf|eot|svg)(\?.*$|$)/,
-            exclude: [/img/],
-            loader: 'file-loader',
-            options: {
-                name: '[name].[ext]',
-                outputPath: '/public/fonts/'
-            }
+        test: /\.(png|jpg|jpeg|gif|svg)(\?.*$|$)/,
+        exclude: [/fonts/],
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: '/img/'
         }
+      }
     ]
   },
   plugins: [
