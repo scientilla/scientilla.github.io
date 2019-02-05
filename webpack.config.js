@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const config = {
   entry: ['./assets/scss/main.scss', './assets/js/main.js'],
@@ -35,23 +36,34 @@ const config = {
           'sass-loader',
         ],
       }, {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)(\?.*$|$)/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
+            test: /\.(png|jpg|jpeg|gif|svg)(\?.*$|$)/,
+            exclude: [/fonts/],
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: '/img/'
+            }
+        }, {
+            test: /\.(woff|woff2|ttf|eot|svg)(\?.*$|$)/,
+            exclude: [/img/],
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath: '/public/fonts/'
+            }
         }
-      }
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['public']),
     new MiniCssExtractPlugin({
-      filename: 'main.css',
+      filename: 'css/main.css',
     }),
     new VueLoaderPlugin(),
     new CopyWebpackPlugin([
       {
         from: 'assets/img',
-        to: 'assets/img'
+        to: 'img'
       }
     ])
   ],
@@ -63,9 +75,8 @@ const config = {
   },
   watch: true,
   output: {
-    publicPath: '/dist/',
-    devtoolLineToLine: true,
-    pathinfo: true
+      path: path.resolve(__dirname, 'public'),
+      filename: 'js/main.js'
   },
 };
 

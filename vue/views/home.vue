@@ -140,15 +140,15 @@
                     title: 'SCIENTILLA',
                     introText: '<p>Spark your research!</p>',
                     imageLeft: {
-                        url: '/dist/assets/img/dashboard-overview.png',
+                        url: '/public/img/dashboard-overview.png',
                         alt: 'Dashboard overview'
                     },
                     imageMiddle: {
-                        url: '/dist/assets/img/dashboard-metrics.png',
+                        url: '/public/img/dashboard-metrics.png',
                         alt: 'Dashboard metrics'
                     },
                     imageRight: {
-                        url: '/dist/assets/img/document-info.png',
+                        url: '/public/img/document-info.png',
                         alt: 'Document overview'
                     }
                 },
@@ -160,7 +160,7 @@
                 },
                 video: {
                     image: {
-                        url: '/dist/assets/img/documents-verfied.png',
+                        url: '/public/img/documents-verfied.png',
                         alt: 'Documents verified'
                     },
                     id: '',
@@ -175,7 +175,7 @@
                     introText: '<p>keep up-to-date research output at several levels</p>',
                     text: '<ul><li>Institutional <strong>installation</strong>.</li><li><strong>Hierarchy</strong> of profiles: personal, group and institutional profiles.</li><li>Researchers and group leaders choose what to <strong>showcase</strong> about <strong>their</strong> activity and the activity of the <strong>research</strong> group.</li></ul>',
                     image: {
-                        url: '/dist/assets/img/personal-group.png',
+                        url: '/public/img/personal-group.png',
                         alt: 'Personal, group and institutional profiles'
                     }
                 },
@@ -190,11 +190,11 @@
                     text: '<ul><li><strong>Graphics</strong> information about your scientific output (by type, by year, by institution, ...)</li><li>In institutions provided with a paid access to Elsevier Scopus APIs, bibliometric indexes and citational data are <strong>monitored</strong> through a <strong>dashboard</strong>. Institutes with a Clarivate account can also retrieve impact factors.</li></ul>',
                     images: [
                         {
-                            url: '/dist/assets/img/documents-by-type-bar-chart.png',
+                            url: '/public/img/documents-by-type-bar-chart.png',
                             alt: 'Documents by source type'
                         },
                         {
-                            url: '/dist/assets/img/journal-metrics-by-year.png',
+                            url: '/public/img/journal-metrics-by-year.png',
                             alt: 'Journal metrics by year'
                         }
                     ]
@@ -204,7 +204,7 @@
                     introText: '<p>re-use your data outside SCIENTILLA</p>',
                     text: '<ul><li><strong>REST JSON APIs</strong> allow institutional websites, analysis tools or services for <strong>accessing</strong> research results and bibliometric data from SCIENTILLA.</li><li>1-click <strong>export</strong> of all publications in a SCIENTILLA profile into csv or bibtex files to <strong>reuse</strong> your <strong>bibliography</strong> externally.</li></ul>',
                     image: {
-                        url: '/dist/assets/img/external-access.png',
+                        url: '/public/img/external-access.png',
                         alt: 'External access'
                     }
                 }

@@ -3952,8 +3952,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
-  src: url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot);
-  src: url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2) format("woff2"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff) format("woff"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf) format("truetype"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome) format("svg"); }
+  src: url(fonts/fa-brands-400.eot);
+  src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(fonts/fa-brands-400.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
@@ -3966,8 +3966,8 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 900;
-  src: url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot);
-  src: url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2) format("woff2"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff) format("woff"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf) format("truetype"), url(/dist/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.svg#fontawesome) format("svg"); }
+  src: url(fonts/fa-solid-900.eot);
+  src: url(fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(fonts/fa-solid-900.woff2) format("woff2"), url(fonts/fa-solid-900.woff) format("woff"), url(fonts/fa-solid-900.ttf) format("truetype"), url(fonts/fa-solid-900.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {
@@ -5151,7 +5151,7 @@ textarea {
     margin: 10px 0px;
     color: transparent;
     text-indent: -9999px;
-    background: url(/dist/assets/img/scientilla-logo-white.png) no-repeat;
+    background: url("/public/img/scientilla-logo-white.png") no-repeat;
     background-size: contain; }
   .header .main-menu {
     display: inline-block;
@@ -5233,7 +5233,7 @@ textarea {
       margin-right: 50px;
       color: transparent;
       text-indent: -9999px;
-      background: url(/dist/assets/img/IIT-v4-logo-t2-negative.png) no-repeat;
+      background: url("/public/img/IIT-v4-logo-t2-negative.png") no-repeat;
       background-size: contain; }
     .footer .footer-bottom .socials {
       display: block;
@@ -5538,7 +5538,7 @@ textarea {
       display: block;
       float: left;
       margin: 0px 10px;
-      background: url(/dist/assets/img/browser.svg) no-repeat;
+      background: url("/public/img/browser.svg") no-repeat;
       background-size: contain;
       vertical-align: top;
       -webkit-box-shadow: 0px 1px 30px #00334e;
