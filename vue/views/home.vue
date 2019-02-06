@@ -7,6 +7,7 @@
                 <ul class="screenshot-listing">
                     <li>
                         <div class="image-container">
+                            <div class="image-placeholder"></div>
                             <image-dialog
                                 :src="spotlight.imageLeft.url"
                                 :alt="spotlight.imageLeft.alt"
@@ -15,6 +16,7 @@
                     </li>
                    <li>
                         <div class="image-container">
+                            <div class="image-placeholder"></div>
                             <image-dialog
                                 :src="spotlight.imageMiddle.url"
                                 :alt="spotlight.imageMiddle.alt"
@@ -23,6 +25,7 @@
                     </li>
                     <li>
                         <div class="image-container">
+                            <div class="image-placeholder"></div>
                             <image-dialog
                                 :src="spotlight.imageRight.url"
                                 :alt="spotlight.imageRight.alt"
@@ -43,16 +46,10 @@
         <div class="demo-video-container">
             <div class="container">
                 <div class="video-outer-container">
-                    <div class="table-container">
-                        <div class="table-cell-container">
-                            <div class="video-container">
-                                <image-dialog
-                                    :src="video.image.url"
-                                    :alt="video.image.alt"
-                                    v-if="video.image.url"></image-dialog>
-                            </div>
-                        </div>
-                    </div>
+                    <image-dialog
+                        :src="video.image.url"
+                        :alt="video.image.alt"
+                        v-if="video.image.url"></image-dialog>
                 </div>
                 <div class="text-container">
                     <div class="table-container">

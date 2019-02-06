@@ -1391,8 +1391,7 @@ textarea {
     border: 0px;
     background: none; }
   .image-dialog .trigger {
-    cursor: -webkit-zoom-in;
-    cursor: zoom-in; }
+    cursor: pointer; }
   .image-dialog .image-dialog-container {
     position: fixed;
     top: 0px;
@@ -1426,9 +1425,9 @@ textarea {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); }
   .image-dialog .close-dialog {
-    position: absolute;
-    top: -3rem;
-    right: -3rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
     z-index: 3;
     width: 14px;
     color: white;
@@ -1956,8 +1955,10 @@ textarea {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    width: 100%;
-    margin-bottom: -3.4%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
     .homepage .spotlight .screenshot-listing:before, .homepage .spotlight .screenshot-listing:after {
       content: "";
       display: table; }
@@ -1967,30 +1968,33 @@ textarea {
       position: relative;
       display: block;
       float: left;
+      height: 64.1453%;
       margin: 0px 10px;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
       background: url("/public/img/browser.svg") no-repeat;
       background-size: contain;
       vertical-align: top;
       -webkit-box-shadow: 0px 1px 30px #00334e;
               box-shadow: 0px 1px 30px #00334e; }
       .homepage .spotlight .screenshot-listing > li .image-container {
-        padding-bottom: 64.1453%;
         overflow: hidden; }
+      .homepage .spotlight .screenshot-listing > li .image-placeholder {
+        padding-bottom: 64.1453%; }
       .homepage .spotlight .screenshot-listing > li .image-dialog {
-        height: 100%;
-        width: 100%; }
-      .homepage .spotlight .screenshot-listing > li img {
         position: absolute;
         top: 0px;
         left: 0px;
+        height: 100%;
+        width: 100%; }
+      .homepage .spotlight .screenshot-listing > li .trigger {
         display: block;
         width: 100%;
         margin: 13% 0px 0px 0px; }
       .homepage .spotlight .screenshot-listing > li:nth-child(1), .homepage .spotlight .screenshot-listing > li:nth-child(3) {
         width: calc(30% - 20px); }
       .homepage .spotlight .screenshot-listing > li:nth-child(2) {
-        width: calc(40% - 20px);
-        margin-top: -3.4%; }
+        width: calc(40% - 20px); }
   .homepage .spotlight .github-link-container {
     position: absolute;
     right: 0px;
@@ -2034,17 +2038,6 @@ textarea {
   padding: 75px 0px; }
   .homepage .demo-video-container .video-outer-container {
     padding: 0px 0px 0px 50px; }
-  .homepage .demo-video-container .video-container {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-bottom: 56.25%;
-    overflow: hidden; }
-    .homepage .demo-video-container .video-container img {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%; }
   .homepage .demo-video-container .text-container {
     padding: 0px 50px; }
 
