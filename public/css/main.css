@@ -1429,7 +1429,9 @@ textarea {
     top: 3rem;
     right: 3rem;
     z-index: 3;
+    display: block;
     width: 14px;
+    height: 23px;
     color: white;
     cursor: pointer;
     overflow: hidden; }
