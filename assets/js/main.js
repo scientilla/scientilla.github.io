@@ -18,7 +18,7 @@ const routes = [
 
 const router = new VueRouter({
   routes,
-  mode: 'hash'
+  mode: 'history'
 });
 
 const eventBus = new Vue();
