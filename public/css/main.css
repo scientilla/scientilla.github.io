@@ -625,6 +625,10 @@ h6,
   font-size: 1.6rem;
   line-height: 2.6rem; }
 
+::-moz-selection {
+  background: #333333;
+  color: white; }
+
 ::selection {
   background: #333333;
   color: white; }
